@@ -6,7 +6,6 @@ import pandas as pd
 
 s3 = boto3.client('s3')
 
-
 def lambda_handler(event, context):
     for record in event['Records']:
         # Decode and parse the Kinesis record
